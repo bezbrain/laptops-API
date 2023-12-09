@@ -1,0 +1,62 @@
+[
+  {
+    "name": "mac",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum alias distinctio maxime harum provident deleniti fugit facilis eius enim.",
+    "price": 305,
+    "inStock": false
+  },
+  {
+    "name": "asus",
+    "desc": "Elit. Totam laborum alias distinctio maxime harum provident deleniti fugiLorem ipsum dolor sit amet consectetur adipisicing t facilis eius enim.",
+    "price": 605,
+    "inStock": true
+  },
+  {
+    "name": "hp",
+    "desc": "elit. Totam Lorem ipsum dolor sit amet consectetur adipisicing  laborum alias distinctio maxime harum provident deleniti fugit facilis eius enim.",
+    "price": 225,
+    "inStock": true
+  },
+  {
+    "name": "dell",
+    "desc": "deleniti fugit facilis eius enim.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum alias distinctio maxime harum provident ",
+    "price": 345,
+    "inStock": false
+  },
+  {
+    "name": "hp",
+    "desc": "Totam laborum alias distinctio maxime harum provident delenitiLorem ipsum dolor sit amet consectetur adipisicing elit.  fugit facilis eius enim.",
+    "price": 270,
+    "inStock": true
+  },
+  {
+    "name": "dell",
+    "desc": "maxime harum providentLorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum alias distinctio  deleniti fugit facilis eius enim.",
+    "price": 732,
+    "inStock": true
+  },
+  {
+    "name": "mac",
+    "desc": "fugit facilis eius enimLorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum alias distinctio maxime harum provident deleniti.",
+    "price": 334,
+    "inStock": true
+  },
+  {
+    "name": "hp",
+    "desc": "adipisicing elit. Totam laborum alias distinctio maxime harum providentLorem ipsum dolor sit amet consectetur  deleniti fugit facilis eius enim.",
+    "price": 503,
+    "inStock": false
+  },
+  {
+    "name": "dell",
+    "desc": "provident deleniti fugitLorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum alias distinctio maxime harum  facilis eius enim.",
+    "price": 620,
+    "inStock": true
+  },
+  {
+    "name": "hp",
+    "desc": "laborum alias distinctio maxime harum provident delenitiLorem ipsum dolor sit amet consectetur adipisicing elit. Totam  fugit facilis eius enim.",
+    "price": 364,
+    "inStock": true
+  }
+]
