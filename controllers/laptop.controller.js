@@ -40,4 +40,21 @@ const getAllLaptops = async (req, res) => {
   });
 };
 
-module.exports = { getAllLaptops };
+const getSingleLaptop = async (req, res) => {
+  const { laptopID } = req.params;
+  console.log(laptopID);
+  const laptop = await LaptopCollection.findOne({ _id: laptopID });
+  if (laptop) {
+    return res.status(200).json({
+      success: true,
+      message: "Single laptop successfull fetched",
+      laptop,
+    });
+  }
+  res.status(404).json({
+    success: true,
+    message: `Laptop with the id ${laptopID} not found`,
+  });
+};
+
+module.exports = { getAllLaptops, getSingleLaptop };
