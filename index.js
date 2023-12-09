@@ -7,6 +7,9 @@ const connectDB = require("./db/connect");
 // Import dotenv
 require("dotenv").config();
 
+// Import async error package for handling async and await
+require("express-async-errors");
+
 // The dynamic port
 const port = process.env.PORT || 3000;
 
