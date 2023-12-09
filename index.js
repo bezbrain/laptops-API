@@ -24,11 +24,11 @@ const errorHandlerMiddleware = require("./middleware/error-handling");
 
 app.get("/", (req, res) => {
   res.send(
-    "<h1>This is the home page</h1><a href='/api/v1/products'>Go to Product Page</a>"
+    "<h1>This is the home page</h1><a href='/api/v1/laptops'>Go to Laptops Page</a>"
   );
 });
 
-app.use("/api/v1/products", laptopRoute);
+app.use("/api/v1/laptops", laptopRoute);
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
