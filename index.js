@@ -1,8 +1,17 @@
 const express = require("express");
 const app = express();
 
+// Import DB connection function
+const connectDB = require("./db/connect");
+
+// Import dotenv
+require("dotenv").config();
+
 // The dynamic port
 const port = process.env.PORT || 3000;
+
+// Import Routes
+const laptopRoute = require("./routes/laptop.route");
 
 // MIDDLEWARE
 // Not-found route
@@ -16,8 +25,19 @@ app.get("/", (req, res) => {
   );
 });
 
+app.use("/api/v1/products", laptopRoute);
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
-// Start the server
-app.listen(port, console.log(`Server is listening on port ${port}`));
+// StartDB
+const start = async () => {
+  try {
+    // Connect to DB
+    await connectDB(process.env.MONGO_URI);
+    // Start the server
+    app.listen(port, console.log(`Server is listening on port ${port}`));
+  } catch (error) {
+    console.log(error);
+  }
+};
+start();
