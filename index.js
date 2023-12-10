@@ -15,20 +15,26 @@ const port = process.env.PORT || 3000;
 
 // Import Routes
 const laptopRoute = require("./routes/laptop.route");
+const cartRoute = require("./routes/cart.route");
 
 // MIDDLEWARE
 // Not-found route
 const notFoundMiddleware = require("./middleware/not-found");
 // Error handling
 const errorHandlerMiddleware = require("./middleware/error-handling");
+// Middleware to make the body available in req
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send(
-    "<h1>This is the home page</h1><a href='/api/v1/laptops'>Go to Laptops Page</a>"
+    "<h1>This is the home page</h1><a href='/api/v1/laptops'>Go to Laptops Page</a><br/><a href='/api/v1/carts'>Go to Carts Page</a>"
   );
 });
 
+// Routes
 app.use("/api/v1/laptops", laptopRoute);
+app.use("/api/v1/carts", cartRoute);
+
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
