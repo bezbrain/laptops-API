@@ -16,6 +16,7 @@ const port = process.env.PORT || 3000;
 // Import Routes
 const laptopRoute = require("./routes/laptop.route");
 const cartRoute = require("./routes/cart.route");
+const favRoute = require("./routes/fav.route");
 
 // MIDDLEWARE
 // Not-found route
@@ -34,6 +35,7 @@ app.get("/", (req, res) => {
 // Routes
 app.use("/api/v1/laptops", laptopRoute);
 app.use("/api/v1/carts", cartRoute);
+app.use("/api/v1/fav", favRoute);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
